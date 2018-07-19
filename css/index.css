@@ -42,9 +42,11 @@ li{
     text-align: center;
     padding:0 40px;
 }
-
-.nav_list>li>a:hover,.current{
+.current{
     background: #006bc7;
+}
+.nav_list>li>a:hover{
+    background: #0c77d1;
 }
 .nav_left_right{
     margin-left:103px;
