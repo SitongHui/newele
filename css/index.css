@@ -252,16 +252,14 @@ li{
     color:#999999;
     font-style:normal;
     display: block;
+    margin-bottom:10px;
 }
 .ticket{
-    width:14px;
-    height:16px;
     font-size:12px;
     border:1px solid #999;
     border-radius: 2px;
     color:#999;
-    margin-top:10px;
-    padding-left:2px;
+    padding:0 2px;
     display: inline-block;
 }
 .book{
@@ -361,4 +359,68 @@ li{
 .line{
     border-bottom:1px solid #eeeeee;
     margin-top: 50px;
+}
+.box{
+    width:262px;
+    border:1px solid #dddddd;
+    background:#fff;
+    position:absolute;
+    top:0;
+    left:294px;
+    z-index:4;
+    padding:18px 14px 36px 14px;
+    display:none;
+}
+.box>h5{
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.box>span{
+    color:#999999;
+    font-size:12px;
+}
+.shortline{
+    border-bottom:1px solid #dcdcdc;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.grey>em{
+    font-style: normal;
+    background: #f2f2f2;
+    font-size:12px;
+    padding:5px 20px;
+}
+.grey>em:nth-child(1){
+    border-right:1px solid #dddddd;
+}
+.grey>p{
+    font-size: 12px;
+    color:#666666;
+    margin-top:25px;
+}
+.ul_li:hover>.box{
+    display: block;
+}
+.grey{
+    margin-top: 15px;
+}
+/*.sanjiao{*/
+/*height:10px;*/
+/*width:10px;*/
+/*border: 1px solid #ddd;*/
+/*transform:rotate(45deg);*/
+/*position:absolute;*/
+/*top:15px;*/
+/*left:-7px;*/
+/*z-index: 2;*/
+/*background: #fff;*/
+/*}*/
+.mb10{
+    margin-top:5px;
+}
+.deepgrey{
+    color:#666;
+    font-style:normal;
+    font-size: 12px;
 }
