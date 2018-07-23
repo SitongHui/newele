@@ -391,30 +391,26 @@ li{
     display:inline-block;
 }
 .img1{
-    width:35px;
-    height:35px;
-    background-image: url("../img/weixin.png");
-    background-size:35px 35px;
+    width:23px;
+    height:19px;
+    background: url("../img/sprite.png") 0 -47px;
     position: absolute;
-    top:26px;
-    left:70px;
+    top:33px;
+    left:74px;
  }
 .img1:hover{
-    background-image: url("../img/weixin2.png");
-    background-size:35px 35px;
+    background: url("../img/sprite.png") 0 -77px;
 }
 .img2{
-    width:25px;
-    height:25px;
-    background-image: url("../img/weibo.png");
-    background-size:25px 25px;
+    width:24px;
+    height:18px;
+    background: url("../img/sprite.png") 0 -107px;
     position: absolute;
-    top:30px;
-    left:113px;
+    top:33px;
+    left:108px;
 }
 .img2:hover{
-    background-image: url("../img/weibo1.png");
-    background-size:25px 25px;
+    background: url("../img/sprite.png") 0 -137px;
 }
 .erweima{
     margin-left:170px;
