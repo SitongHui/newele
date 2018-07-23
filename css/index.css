@@ -412,6 +412,9 @@ li{
 .img2:hover{
     background: url("../img/sprite.png") 0 -137px;
 }
+.img1:hover>.weixin_high{
+    display:block;
+}
 .erweima{
     margin-left:170px;
 }
@@ -515,4 +518,43 @@ li{
     border-width:8px;
     border-right-color:#dddddd;
     top:8px;
+}
+.weixin_high{
+    background: #fff;
+    padding:10px 10px 2px 10px;
+    border:1px solid #cacaca;
+    position:absolute;
+    top:-185px;
+    left:-66px;
+    display: none;
+}
+.weixin_high:after,.weixin_high:before{
+    width:0;
+    height:0;
+    border:solid transparent;
+    content:' ';
+    top:100%;
+    position:absolute;
+}
+.weixin_high:after{
+    border-width:7px;
+    border-top-color:#fff;
+    top:167px;
+    left:66px;
+}
+.weixin_high:before{
+    border-width:8px;
+    border-top-color:#cacaca;
+    top:168px;
+    left:65px;
+}
+.weixin_high>img{
+    width:120px;
+    height:120px;
+}
+.weixin_high>span{
+    font-size: 12px;
+    color:#999999;
+    display:block;
+    text-align:center;
 }
