@@ -18,8 +18,6 @@ li{
 .ele{
 }
 .nav{
-    /*width:100%;*/
-    /*height:60px;*/
     background: #1e89e0;
 }
 .nav_con{
@@ -29,7 +27,6 @@ li{
     display: flex;
 }
 .nav_list{
-    /*width:1044px;*/
     display:flex;
     padding-left:20px;
     float:left;
@@ -42,17 +39,15 @@ li{
     text-align: center;
     padding:0 40px;
 }
-.current{
+
+.nav_list>li>a:hover,.current{
     background: #006bc7;
-}
-.nav_list>li>a:hover{
-    background: #0c77d1;
 }
 .nav_left_right{
     margin-left:103px;
     width:400px;
     display: flex;
-
+    position:relative;
 }
 .nav_left_right>a{
     font-size:14px;
@@ -60,6 +55,40 @@ li{
 }
 .login{
     color: #ffffff;!important;
+}
+.phone{
+    width:180px;
+    height:210px;
+    z-index:5;
+    background:#fff;
+    padding:15px;
+    position:absolute;
+    top: 50px;
+    left:85px;
+    box-shadow: 2px 2px 10px #c4c4c4;
+    display: none;
+}
+.phone>span{
+    font-size:16px;
+    font-weight: bold;
+}
+.san{
+    width:0;
+    height:0;
+    border-bottom:5px solid #fff;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    position:absolute;
+    top:-5px;
+    left:13px;
+}
+.phone>img{
+    width:180px;
+    height:180px;
+    margin-top:10px;
+}
+.touch:hover>.phone{
+    display: block;
 }
 .pic-phone{
     width:13px;
@@ -76,35 +105,59 @@ li{
 .app,.gz{
     color:#d2e7f9;
 }
+.app{
+    font-size:14px;
+    vertical-align: 4px;
+}
+.touch{
+    height:60px;
+}
+.touch:hover>.phone{
+    display:block;
+}
 .app:hover,.gz:hover{
     color:white;
 }
 .section{
     width:1180px;
-    margin:0 auto 0px auto;
+    margin:0 auto 0 auto;
 }
 .cur_pos{
     font-size:12px;
-    line-height:54px;
+    line-height:12px;
+    margin-top:27px;
     color:#999999;
+    display: inline-block;
+}
+.cur_pos>a{
+    width:70px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .cur_pos>a:hover, .cur_pos>span{
     color:#0089dc;
 }
 .cur_pos>span{
     cursor: pointer;
+
 }
 .text_search{
-    /*float:left;*/
     position: relative;
 }
 .search{
     width:282px;
     height:30px;
+    float:right;
     padding:9px 8px 9px 8px;
     font-size:12px;
-    margin-left:710px;
+    margin-top:14px;
     border:1px solid #cccccc;
+}
+.search:focus{
+    width:352px;
+    transition:.5s;
 }
 .pic_sea{
     position: absolute;
@@ -114,7 +167,7 @@ li{
 .article_img {
     width: 1180px;
     height: 46px;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
 }
 .article_img>a>img{
     width:186px;
@@ -331,8 +384,37 @@ li{
 .us{
     display:inline-block;
 }
+.tel{
+    position: relative;
+}
 .tel>img{
     display:inline-block;
+}
+.img1{
+    width:35px;
+    height:35px;
+    background-image: url("../img/weixin.png");
+    background-size:35px 35px;
+    position: absolute;
+    top:26px;
+    left:70px;
+ }
+.img1:hover{
+    background-image: url("../img/weixin2.png");
+    background-size:35px 35px;
+}
+.img2{
+    width:25px;
+    height:25px;
+    background-image: url("../img/weibo.png");
+    background-size:25px 25px;
+    position: absolute;
+    top:30px;
+    left:113px;
+}
+.img2:hover{
+    background-image: url("../img/weibo1.png");
+    background-size:25px 25px;
 }
 .erweima{
     margin-left:170px;
@@ -386,16 +468,22 @@ li{
     margin-top:10px;
     margin-bottom:10px;
 }
+.grey{
+    background: #f2f2f2;
+    padding-bottom:5px;
+}
 .grey>em{
     font-style: normal;
-    background: #f2f2f2;
     font-size:12px;
-    padding:5px 20px;
+    padding:5px 20px
 }
-.grey>em:nth-child(1){
-    border-right:1px solid #dddddd;
+.grey>strong{
+    font-style:normal;
+    font-weight: normal;
+    font-size:12px;
+    color:#b7b7b7;
 }
-.grey>p{
+.divp{
     font-size: 12px;
     color:#666666;
     margin-top:25px;
@@ -406,16 +494,6 @@ li{
 .grey{
     margin-top: 15px;
 }
-.sanjiao{
-    height:0px;
-    width:0px;
-    border-right: 10px solid #fff;
-    border-top: 10px solid #f5f5f5;
-    border-bottom: 10px solid #f5f5f5;
-    position:absolute;
-    top:15px;
-    left:-10px;
-}
 .mb10{
     margin-top:5px;
 }
@@ -423,4 +501,22 @@ li{
     color:#666;
     font-style:normal;
     font-size: 12px;
+}
+.box:after,.box:before{
+    width:0;
+    height:0;
+    border:solid transparent;
+    content:' ';
+    right:100%;
+    position:absolute;
+}
+.box:after{
+    border-width:6px;
+    border-right-color:#fff;
+    top:10px;
+}
+.box:before{
+    border-width:8px;
+    border-right-color:#dddddd;
+    top:8px;
 }
